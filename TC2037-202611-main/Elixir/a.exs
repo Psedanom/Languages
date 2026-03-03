@@ -26,7 +26,7 @@ defmodule Dates do
     # List of conditions
     cond do
       # -> equivalent to return
-      month == 2 -> if leap?(year), do: 29, else:28
+      month == 2 -> if leap?(year), do: 29, else: 28
 
       month in [4,6,9,11] -> 30
       true -> 31
